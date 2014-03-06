@@ -339,3 +339,38 @@ java.io.FileNotFoundException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.aptana.projects 2 0 2014-03-06 17:48:46.972
+!MESSAGE Internal error: 
+!STACK 1
+org.eclipse.core.runtime.CoreException: 
+	at com.aptana.projects.wizards.AbstractNewProjectWizard$1$1.run(AbstractNewProjectWizard.java:274)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard$1.run(AbstractNewProjectWizard.java:345)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Caused by: org.eclipse.core.runtime.CoreException: warning: --depth is ignored in local clones; use file:// instead.
+fatal: destination path 'C:\Users\Steef\Documents\Rails Tutorials\sample_app\sample_app' already exists and is not an empty directory.
+	at com.aptana.projects.wizards.AbstractNewProjectWizard.doCloneFromGit(AbstractNewProjectWizard.java:665)
+	at com.aptana.ruby.ui.wizards.NewRubyProjectWizard.cloneFromGit(NewRubyProjectWizard.java:145)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard.createNewProject(AbstractNewProjectWizard.java:537)
+	at org.radrails.rails.internal.ui.NewRailsProjectWizard.createNewProject(NewRailsProjectWizard.java:116)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard$1$1.run(AbstractNewProjectWizard.java:270)
+	... 4 more
+!SUBENTRY 1 com.aptana.projects 4 0 2014-03-06 17:48:46.973
+!MESSAGE 
+!STACK 1
+org.eclipse.core.runtime.CoreException: warning: --depth is ignored in local clones; use file:// instead.
+fatal: destination path 'C:\Users\Steef\Documents\Rails Tutorials\sample_app\sample_app' already exists and is not an empty directory.
+	at com.aptana.projects.wizards.AbstractNewProjectWizard.doCloneFromGit(AbstractNewProjectWizard.java:665)
+	at com.aptana.ruby.ui.wizards.NewRubyProjectWizard.cloneFromGit(NewRubyProjectWizard.java:145)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard.createNewProject(AbstractNewProjectWizard.java:537)
+	at org.radrails.rails.internal.ui.NewRailsProjectWizard.createNewProject(NewRailsProjectWizard.java:116)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard$1$1.run(AbstractNewProjectWizard.java:270)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at com.aptana.projects.wizards.AbstractNewProjectWizard$1.run(AbstractNewProjectWizard.java:345)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 2 com.aptana.core 4 0 2014-03-06 17:48:46.973
+!MESSAGE warning: --depth is ignored in local clones; use file:// instead.
+fatal: destination path 'C:\Users\Steef\Documents\Rails Tutorials\sample_app\sample_app' already exists and is not an empty directory.
